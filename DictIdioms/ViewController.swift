@@ -8,11 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    var dict: Dict?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        guard let url = Bundle.main.url(forResource: "data", withExtension: "txt") else {
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            self.dict = try JSONDecoder().decode(Dict.self, from: data)
+            self.tableView.reloadData()
+        } catch {
+            print(error)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +34,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let dict = self.dict {
+            return dict.工作表.count
+        }
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = dict?.工作表[indexPath.row].成語
+        return cell
+    }
 }
 
