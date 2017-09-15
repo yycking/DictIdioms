@@ -15,8 +15,9 @@
 		AFDABF691F62A7DA00982468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDABF671F62A7DA00982468 /* LaunchScreen.storyboard */; };
 		AFDABF741F62A7DA00982468 /* DictIdiomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDABF731F62A7DA00982468 /* DictIdiomsTests.swift */; };
 		AFDABF7F1F62A7DB00982468 /* DictIdiomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDABF7E1F62A7DB00982468 /* DictIdiomsUITests.swift */; };
-		AFDABF8D1F62A87B00982468 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFDABF8C1F62A7FD00982468 /* data.txt */; };
-		AFDABF8F1F62A9AB00982468 /* Dict.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDABF8E1F62A9AB00982468 /* Dict.swift */; };
+		AFDABF8D1F62A87B00982468 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AFDABF8C1F62A7FD00982468 /* data.json */; };
+		AFDABF8F1F62A9AB00982468 /* DictIdioms.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDABF8E1F62A9AB00982468 /* DictIdioms.swift */; };
+		AFDE2C051F68D50C00643CF1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE2C041F68D50C00643CF1 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		AFDABF7A1F62A7DB00982468 /* DictIdiomsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictIdiomsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDABF7E1F62A7DB00982468 /* DictIdiomsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictIdiomsUITests.swift; sourceTree = "<group>"; };
 		AFDABF801F62A7DB00982468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFDABF8C1F62A7FD00982468 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
-		AFDABF8E1F62A9AB00982468 /* Dict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dict.swift; sourceTree = "<group>"; };
+		AFDABF8C1F62A7FD00982468 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		AFDABF8E1F62A9AB00982468 /* DictIdioms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictIdioms.swift; sourceTree = "<group>"; };
+		AFDE2C041F68D50C00643CF1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,7 @@
 		AFDABF4F1F62A7DA00982468 = {
 			isa = PBXGroup;
 			children = (
-				AFDABF8C1F62A7FD00982468 /* data.txt */,
+				AFDABF8C1F62A7FD00982468 /* data.json */,
 				AFDABF5A1F62A7DA00982468 /* DictIdioms */,
 				AFDABF721F62A7DA00982468 /* DictIdiomsTests */,
 				AFDABF7D1F62A7DB00982468 /* DictIdiomsUITests */,
@@ -111,7 +113,8 @@
 				AFDABF671F62A7DA00982468 /* LaunchScreen.storyboard */,
 				AFDABF6A1F62A7DA00982468 /* Info.plist */,
 				AFDABF621F62A7DA00982468 /* DictIdioms.xcdatamodeld */,
-				AFDABF8E1F62A9AB00982468 /* Dict.swift */,
+				AFDABF8E1F62A9AB00982468 /* DictIdioms.swift */,
+				AFDE2C041F68D50C00643CF1 /* Data.swift */,
 			);
 			path = DictIdioms;
 			sourceTree = "<group>";
@@ -241,7 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFDABF8D1F62A87B00982468 /* data.txt in Resources */,
+				AFDABF8D1F62A87B00982468 /* data.json in Resources */,
 				AFDABF691F62A7DA00982468 /* LaunchScreen.storyboard in Resources */,
 				AFDABF661F62A7DA00982468 /* Assets.xcassets in Resources */,
 				AFDABF611F62A7DA00982468 /* Main.storyboard in Resources */,
@@ -270,7 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDABF5E1F62A7DA00982468 /* ViewController.swift in Sources */,
-				AFDABF8F1F62A9AB00982468 /* Dict.swift in Sources */,
+				AFDE2C051F68D50C00643CF1 /* Data.swift in Sources */,
+				AFDABF8F1F62A9AB00982468 /* DictIdioms.swift in Sources */,
 				AFDABF5C1F62A7DA00982468 /* AppDelegate.swift in Sources */,
 				AFDABF641F62A7DA00982468 /* DictIdioms.xcdatamodeld in Sources */,
 			);

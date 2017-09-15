@@ -1,18 +1,18 @@
 //
-//  Dict.swift
+//  Data.swift
 //  DictIdioms
 //
-//  Created by Wayne Yeh on 2017/9/8.
+//  Created by Wayne Yeh on 2017/9/13.
 //  Copyright © 2017年 Wayne Yeh. All rights reserved.
 //
 
 import Foundation
 
-class Dict: Codable {
+class DataJson: Codable {
     class Idiom: Codable {
-        let 成語: String
-        let 注音: String
-        let 漢語拼音: String
+        let 成語: String!
+        let 注音: String!
+        let 漢語拼音: String!
         let 釋義: String?
         let 典源: String?
         let 典故說明: String?
@@ -24,5 +24,5 @@ class Dict: Codable {
         let 參考語詞: String?
     }
     
-    let 工作表: [Idiom]
+    let 工作表: [Idiom]!
 }

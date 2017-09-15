@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    var dict: Dict?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +20,7 @@ class ViewController: UITableViewController {
         
         do {
             let data = try Data(contentsOf: url)
-            self.dict = try JSONDecoder().decode(Dict.self, from: data)
+            let dict = try JSONDecoder().decode(DataJson.self, from: data)
             self.tableView.reloadData()
         } catch {
             print(error)
